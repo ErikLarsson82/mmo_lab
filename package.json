@@ -10,5 +10,8 @@
     "grunt-contrib-watch": "^1.0.0",
     "socket.io": "^1.5.0",
     "underscore": "^1.8.3"
+  },
+  "engines": {
+    "node": "4.2.4"
   }
 }
