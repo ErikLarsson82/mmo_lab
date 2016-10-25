@@ -27,9 +27,7 @@ io.on('connection', function(socket){
     game.movePlayer(id);
   });
 
-  socket.on('disconnect', function(){
-    console.log('user disconnected');
-  });
+  socket.on('disconnect', function(){});
 });
 
 game.init('server');

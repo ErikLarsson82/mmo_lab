@@ -39,7 +39,6 @@ var game = {
         }.bind(this));
 
         if (this.context) {
-            console.log(this.context)
             //Client
             this.context.fillStyle = "white";
             this.context.fillRect(0, 0, 800, 600);
@@ -47,7 +46,6 @@ var game = {
                 player.draw(this.context);
             }.bind(this));
         }
-        console.log('Gametick');
     },
     newStatus: function(status) {
         this.players.length = 0;
@@ -63,11 +61,9 @@ var game = {
         var decoratedPlayer = _.extend({
             tick: function() {
                 if (this.moving) {
-                    console.log('detect movement!');
-                    this.x = this.x + 10;
+                    this.x = this.x + 1;
                     this.moving = false;
                 }
-                console.log('ticking player', this.id, this.x);
             },
             draw: function(context) {
                 context.fillStyle = colorRange(this.id);
