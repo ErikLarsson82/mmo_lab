@@ -1,6 +1,6 @@
 var app = require('express')();
-var https = require('https').Server(app);
-var io = require('socket.io')(https);
+var http = require('https').Server(app);
+var io = require('socket.io')(http);
 var game = require('./game.js');
 
 var port = process.env.PORT || 8080;
@@ -34,7 +34,7 @@ io.on('connection', function(socket){
 
 game.init('server');
 
-https.listen(port, function(){
+http.listen(port, function(){
   console.log('listening on *:' + port);
 });
 
