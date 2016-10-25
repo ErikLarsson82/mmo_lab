@@ -8,15 +8,15 @@ var port = process.env.PORT || 8080;
 console.log(__dirname, typeof game);
 
 app.get('/', function(req, res){
-  res.sendFile('client.html');
+  res.sendFile('/client.html');
 });
 
 app.get('/game.js', function(req, res){
-  res.sendFile('game.js');
+  res.sendFile('/game.js');
 });
 
 app.get('/client_bundle.js', function(req, res){
-  res.sendFile('client_bundle.js');
+  res.sendFile('/client_bundle.js');
 });
 
 io.on('connection', function(socket){
