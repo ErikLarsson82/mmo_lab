@@ -1,0 +1,99 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'express-keepalive' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose install initial load of E:\Dev\mmo\package.json
+5 warn package.json mmo-example@0.0.1 No repository field.
+6 warn package.json mmo-example@0.0.1 No README data
+7 warn package.json mmo-example@0.0.1 No license field.
+8 verbose installManyTop reading scoped package data from E:\Dev\mmo\node_modules\browserify\package.json
+9 verbose installManyTop reading scoped package data from E:\Dev\mmo\node_modules\express\package.json
+10 verbose installManyTop reading scoped package data from E:\Dev\mmo\node_modules\grunt\package.json
+11 verbose installManyTop reading scoped package data from E:\Dev\mmo\node_modules\grunt-browserify\package.json
+12 verbose installManyTop reading scoped package data from E:\Dev\mmo\node_modules\grunt-contrib-watch\package.json
+13 verbose installManyTop reading scoped package data from E:\Dev\mmo\node_modules\socket.io\package.json
+14 verbose installManyTop reading scoped package data from E:\Dev\mmo\node_modules\underscore\package.json
+15 info package.json grunt-browserify@5.0.0 No license field.
+16 verbose readDependencies loading dependencies from E:\Dev\mmo\package.json
+17 silly cache add args [ 'express-keepalive', null ]
+18 verbose cache add spec express-keepalive
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: 'express-keepalive',
+19 silly cache add   scope: null,
+19 silly cache add   name: 'express-keepalive',
+19 silly cache add   rawSpec: '',
+19 silly cache add   spec: 'latest',
+19 silly cache add   type: 'tag' }
+20 silly addNamed express-keepalive@latest
+21 verbose addNamed "latest" is being treated as a dist-tag for express-keepalive
+22 info addNameTag [ 'express-keepalive', 'latest' ]
+23 silly mapToRegistry name express-keepalive
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/express-keepalive
+27 verbose addNameTag registry:https://registry.npmjs.org/express-keepalive not in flight; fetching
+28 verbose request uri https://registry.npmjs.org/express-keepalive
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 9:44:18 AM
+31 verbose request id 79041f80c1edcbd3
+32 http request GET https://registry.npmjs.org/express-keepalive
+33 http 404 https://registry.npmjs.org/express-keepalive
+34 verbose headers { 'content-type': 'application/json',
+34 verbose headers   'cache-control': 'max-age=0',
+34 verbose headers   'content-length': '2',
+34 verbose headers   'accept-ranges': 'bytes',
+34 verbose headers   date: 'Tue, 25 Oct 2016 07:44:16 GMT',
+34 verbose headers   via: '1.1 varnish',
+34 verbose headers   age: '0',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'x-served-by': 'cache-fra1230-FRA',
+34 verbose headers   'x-cache': 'MISS',
+34 verbose headers   'x-cache-hits': '0',
+34 verbose headers   'x-timer': 'S1477381455.529109,VS0,VE758',
+34 verbose headers   vary: 'Accept-Encoding' }
+35 silly get cb [ 404,
+35 silly get   { 'content-type': 'application/json',
+35 silly get     'cache-control': 'max-age=0',
+35 silly get     'content-length': '2',
+35 silly get     'accept-ranges': 'bytes',
+35 silly get     date: 'Tue, 25 Oct 2016 07:44:16 GMT',
+35 silly get     via: '1.1 varnish',
+35 silly get     age: '0',
+35 silly get     connection: 'keep-alive',
+35 silly get     'x-served-by': 'cache-fra1230-FRA',
+35 silly get     'x-cache': 'MISS',
+35 silly get     'x-cache-hits': '0',
+35 silly get     'x-timer': 'S1477381455.529109,VS0,VE758',
+35 silly get     vary: 'Accept-Encoding' } ]
+36 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/express-keepalive
+36 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+36 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+36 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+37 verbose statusCode 404
+38 verbose pkgid express-keepalive
+39 verbose cwd E:\Dev\mmo
+40 error Windows_NT 6.1.7601
+41 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "express-keepalive"
+42 error node v4.2.4
+43 error npm  v2.14.12
+44 error code E404
+45 error 404 Registry returned 404 for GET on https://registry.npmjs.org/express-keepalive
+45 error 404
+45 error 404 'express-keepalive' is not in the npm registry.
+45 error 404 You should bug the author to publish it (or use the name yourself!)
+45 error 404 It was specified as a dependency of 'mmo-example'
+45 error 404
+45 error 404 Note that you can also install from a
+45 error 404 tarball, folder, http url, or git url.
+46 verbose exit [ 1, true ]
