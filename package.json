@@ -15,6 +15,7 @@
     "node": "4.2.4"
   },
   "scripts": {
+    "prestart": "grunt",
     "start": "node server.js"
   }
 }
