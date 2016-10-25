@@ -8,7 +8,7 @@ var port = process.env.PORT || 8080;
 console.log(__dirname);
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/client.html');
+  res.sendFile('./' + __dirname + '/client.html');
 });
 
 app.get('/game.js', function(req, res){
