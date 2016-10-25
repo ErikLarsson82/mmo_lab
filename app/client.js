@@ -1,4 +1,4 @@
-var game = require('./game.js');
+var game = require('./app/game.js');
 
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
