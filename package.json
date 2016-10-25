@@ -15,6 +15,6 @@
     "node": "4.2.4"
   },
   "scripts": {
-    "start": "node app/server.js"
+    "start": "node server.js"
   }
 }
