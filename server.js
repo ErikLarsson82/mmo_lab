@@ -1,22 +1,22 @@
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-var game = require('./app/game.js');
+var game = require('./game.js');
 
 var port = process.env.PORT || 8080;
 
-console.log(__dirname);
+console.log(__dirname, typeof game);
 
 app.get('/', function(req, res){
-  res.sendFile('./' + __dirname + '/client.html');
+  res.sendFile('client.html');
 });
 
 app.get('/game.js', function(req, res){
-  res.sendFile(__dirname + '/game.js');
+  res.sendFile('game.js');
 });
 
 app.get('/client_bundle.js', function(req, res){
-  res.sendFile(__dirname + '/client_bundle.js');
+  res.sendFile('client_bundle.js');
 });
 
 io.on('connection', function(socket){

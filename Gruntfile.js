@@ -6,13 +6,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     browserify: {
       client: {
-        src: 'app/client.js',
-        dest: 'app/client_bundle.js'
+        src: 'client.js',
+        dest: 'client_bundle.js'
       }
     },
     watch: {
-      files: 'app/game.js',
-      tasks: ['browserify', 'server']
+      files: 'game.js',
+      tasks: ['browserify']
     }
   });
 
