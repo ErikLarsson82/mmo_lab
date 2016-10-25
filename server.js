@@ -5,6 +5,8 @@ var game = require('./game.js');
 
 var port = process.env.PORT || 8080;
 
+console.log(__dirname);
+
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/client.html');
 });
