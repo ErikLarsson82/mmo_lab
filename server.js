@@ -32,8 +32,8 @@ io.on('connection', function(socket){
 
 game.init('server');
 
-http.listen(3007, function(){
-  console.log('listening on *:3007');
+http.listen(80, function(){
+  console.log('listening on *:80');
 });
 
 module.exports = app;
